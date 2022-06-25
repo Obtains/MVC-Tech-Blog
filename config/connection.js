@@ -14,7 +14,7 @@ else {
         {
             host: 'localhost',
             dialect: 'mysql',
-            port: 3306
+            port: 8080
         });
 }
 
