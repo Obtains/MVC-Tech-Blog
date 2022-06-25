@@ -5,11 +5,13 @@ const helpers = require('./utils/helpers');
 const routes = require('./controllers');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const { Server } = require('http');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+Server.listen(port, function() {console.log("app is running on port" + port)});
 
 const hbs = exphbs.create({ helpers });
 
