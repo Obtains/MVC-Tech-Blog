@@ -33,8 +33,6 @@ app.use(session(sess));
 
 app.use(routes);
 
-sequelize.sync();
-
-app.listen(process.env.PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-  });
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+});
