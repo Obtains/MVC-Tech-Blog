@@ -9,10 +9,11 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <header>
-                <h1><a href="/">Home</a></h1>
-            <nav>
+     <div class="wrapper">
+        <header>
+            <div>
+                <nav>
+                <a href="/">Home</a>
                 <a href="/dashboard">Dashboard</a>
                 {{#if loggedIn}}
                 <a href="/" id="logout">Logout</a>
@@ -20,11 +21,11 @@
                 <a href="/login">Login</a>
                 {{/if}}
             </nav>
-        </div>
+            </div>    
         <div>
-            <h2 class="main-title">Tech Blog</h2>
+            <h1 class="home-title">Tech Blog</h1>
         </div>
-     </header>
+    </header>
      <main>
         {{{ body }}}
      </main>
