@@ -10,9 +10,9 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-server.listen(PORT, () => {
-    console.log("App is running on port " + PORT);
-});
+// server.listen(PORT, () => {
+//     console.log("App is running on port " + PORT);
+// });
 
 
 const hbs = exphbs.create({ helpers });
