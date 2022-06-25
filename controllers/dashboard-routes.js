@@ -6,7 +6,7 @@ const { User, Post, Comment } = require('../models');
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
         where: { user_id: req.session.user_id },
-        attributes: ['id', 'title', 'post_text', 'created at'],
+        attributes: ['id', 'title', 'post_text', 'created_at'],
         include: [{
                 model: User,
                 attributes: ['username']
