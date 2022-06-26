@@ -8,7 +8,7 @@ While other users can comment on the posts and interact with other users.
 Add an .env file to the root.
 
 ## Heroku Link
-[Link to Heroku](https://dashboard.heroku.com/apps/sleepy-dusk-98330)
+[Link to Heroku](https://sleepy-dusk-98330.herokuapp.com/)
 
 ## Technologies 
 * Javascript
