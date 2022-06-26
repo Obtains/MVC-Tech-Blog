@@ -1,3 +1,5 @@
+// Combined login and signup form to have sign up show when user clicks "login" on navbar
+// and to clean up code
 async function loginFormHandler(event) {
     event.preventDefault();
 

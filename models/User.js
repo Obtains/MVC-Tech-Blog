@@ -2,12 +2,15 @@ const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 const { Model, DataTypes } = require('sequelize');
 
+// Create User Model
 class User extends Model {
+    // Checks password
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
 };
 
+// Create fields for User Model
 User.init({
         id: {
             type: DataTypes.INTEGER,
