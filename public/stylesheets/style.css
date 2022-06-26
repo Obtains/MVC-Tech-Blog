@@ -24,14 +24,14 @@ a:hover {
 .main-title {
     font-size: 2rem;
     color:black;
-    background-color:#225ca3;
+    background-color:cadetblue;
     padding: 12px;
     display: inline-block;
     border-radius: 3px;
 }
 
 button {
-    background-color: #225ca3;
+    background-color:cadetblue;
     border: 0;
     padding: 1%;
     color: bisque;
@@ -51,20 +51,17 @@ button:hover {
     list-style-type: none;
 }
 
-textarea, input {
+input {
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
-}
-
-textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-}
-
-textarea {
     min-width: 40%;
     min-height: 100px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
 }
 
 form > div {
@@ -85,7 +82,7 @@ form label {
 }
 
 header {
-    background-color:#225ca3;
+    background-color:cadetblue;
     border: 3px solid black;
     display: flex;
     justify-content: space-between;
